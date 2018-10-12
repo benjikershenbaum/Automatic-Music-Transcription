@@ -23,8 +23,8 @@ def plot_confusion_matrix(cm, classes=None, title='Confusion matrix'):
 
 print('Start')
 # Read in files
-out_file_path = 'C:\\Users\\Benji\\Desktop\\Work\\Music\\Data\\Isolated Only\\Processed\\Output\\output.txt'
-in_file_path = 'C:\\Users\\Benji\\Desktop\\Work\\Music\\Data\\Isolated Only\\Processed\\Input\\input.txt'
+out_file_path = 'PATH TO output.txt'
+in_file_path = 'PATH TO input.txt'
 inp= pd.read_csv(in_file_path,sep="	",header=None)
 out = pd.read_csv(out_file_path,sep="	",header=None)
 print('Done: Read Files')
