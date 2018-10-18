@@ -18,13 +18,13 @@ These each individually have 99 features, so 99*4=396 which accounts for all the
 
 # Output Representation:
 I have considered 3 methods of representing the outputs of the system
-1. An 88 feature vector representing the probability of that note being played
-2. An 88 feature vector representing the probability of that note being played, and 1 feature indicating if a note is being played.
-3. An 88 feature vector represnting the probablility of that note being played, and a one-hot encoding indication the probability of the number of notes being played.
+1. An 88 feature vector representing the probability of that note being played (method 1)
+2. An 88 feature vector representing the probability of that note being played, and 1 feature indicating if a note is being played (method 2).
+3. An 88 feature vector represnting the probablility of that note being played, and a one-hot encoding indication the probability of the number of notes being played (method 3).
 
 These different methods will provide different methods of determining the number of notes being played. In methods 1 and 2 a threshold will need to be used for the probabilities to determine the notes played, while in method 3 the NN will learn the number of notes and the most likely number of notes will be determined, then those most likely notes will be selected as the predicton.
 
-# Metrics
+# Metrics:
 6 metrics will be used to compare these 3 output methods.
 * General Accuracy - How well the system can predict the notes played at any instance.
 * Empty Accuracy - How well the system can predict those instances when no notes are played.
@@ -32,3 +32,55 @@ These different methods will provide different methods of determining the number
 * Number of Notes Accuracy - How well the system can predict the number of notes being played.
 * Same Number Note Accuracy - How well the system can predict the notes when the number of notes was correctly predicted.
 * Number of Correct Notes Accuracy - How well the system can predict the number out notes out of the number predicted
+For single note recognition the last 3 metrics are not relevant.
+
+
+# SNN:
+## Single Notes:
+It should be noted that in this case method 2 and method 3 are similar as they tell only if a note is played or not, as those are the only two trained options.
+### Method 1:
+Here a currently arbitrary threshold of 0.4 is used to determine the note played.
+
+General Accuracy: 0.77
+Empty Accuracy: 0.34
+Non Empty Accuracy: 0.85
+
+### Method 2:
+
+General Accuracy: 0.82
+Empty Accuracy: 0.70
+Non Empty Accuracy: 0.83
+
+### Method 3:
+General Accuracy: 0.81
+Empty Accuracy: 0.81
+Non Empty Accuracy: 0.81
+
+## Multiple Notes:
+### Method 1:
+Here a currently arbitrary threshold of 0.2 is used to determine the note played.
+
+General Accuracy: 0.42
+Empty Accuracy: 0.51
+Non Empty Accuracy: 0.41
+Number of Notes Accuracy: 0.51
+Same Number Note Accuracy: 0.82
+Number of Correct Notes Accuracy: 0.65
+
+
+### Method 2:
+
+General Accuracy: 0.49
+Empty Accuracy: 0.79
+Non Empty Accuracy: 0.46
+Number of Notes Accuracy: 0.57
+Same Number Note Accuracy: 0.85
+Number of Correct Notes Accuracy: 0.80
+
+### Method 3:
+General Accuracy: 0.54
+Empty Accuracy: 0.79
+Non Empty Accuracy: 0.52
+Number of Notes Accuracy: 0.68
+Same Number Note Accuracy: 0.79
+Number of Correct Notes Accuracy: 0.72
