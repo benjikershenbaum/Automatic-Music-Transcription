@@ -41,46 +41,46 @@ It should be noted that in this case method 2 and method 3 are similar as they t
 ### Method 1:
 Here a currently arbitrary threshold of 0.4 is used to determine the note played.
 
-General Accuracy: 0.77
-Empty Accuracy: 0.34
-Non Empty Accuracy: 0.85
+General Accuracy: 0.77<br />
+Empty Accuracy: 0.34<br />
+Non Empty Accuracy: 0.85<br />
 
 ### Method 2:
 
-General Accuracy: 0.82
-Empty Accuracy: 0.70
-Non Empty Accuracy: 0.83
+General Accuracy: 0.82<br />
+Empty Accuracy: 0.70<br />
+Non Empty Accuracy: 0.83<br />
 
 ### Method 3:
-General Accuracy: 0.81
-Empty Accuracy: 0.81
-Non Empty Accuracy: 0.81
+General Accuracy: 0.81<br />
+Empty Accuracy: 0.81<br />
+Non Empty Accuracy: 0.81<br />
 
 ## Multiple Notes:
 ### Method 1:
-Here a currently arbitrary threshold of 0.2 is used to determine the note played.
+Here a currently arbitrary threshold of 0.2 is used to determine the note played.<br />
 
-General Accuracy: 0.42
-Empty Accuracy: 0.51
-Non Empty Accuracy: 0.41
-Number of Notes Accuracy: 0.51
-Same Number Note Accuracy: 0.82
-Number of Correct Notes Accuracy: 0.65
+General Accuracy: 0.42<br />
+Empty Accuracy: 0.51<br />
+Non Empty Accuracy: 0.41<br />
+Number of Notes Accuracy: 0.51<br />
+Same Number Note Accuracy: 0.82<br />
+Number of Correct Notes Accuracy: 0.65<br />
 
 
 ### Method 2:
 
-General Accuracy: 0.49
-Empty Accuracy: 0.79
-Non Empty Accuracy: 0.46
-Number of Notes Accuracy: 0.57
-Same Number Note Accuracy: 0.85
-Number of Correct Notes Accuracy: 0.80
+General Accuracy: 0.49<br />
+Empty Accuracy: 0.79<br />
+Non Empty Accuracy: 0.46<br />
+Number of Notes Accuracy: 0.57<br />
+Same Number Note Accuracy: 0.85<br />
+Number of Correct Notes Accuracy: 0.80<br />
 
 ### Method 3:
-General Accuracy: 0.54
-Empty Accuracy: 0.79
-Non Empty Accuracy: 0.52
-Number of Notes Accuracy: 0.68
-Same Number Note Accuracy: 0.79
-Number of Correct Notes Accuracy: 0.72
+General Accuracy: 0.54<br />
+Empty Accuracy: 0.79<br />
+Non Empty Accuracy: 0.52<br />
+Number of Notes Accuracy: 0.68<br />
+Same Number Note Accuracy: 0.79<br />
+Number of Correct Notes Accuracy: 0.72<br />
