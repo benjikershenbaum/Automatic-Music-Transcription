@@ -69,6 +69,7 @@ Number of Correct Notes Accuracy: 0.65<br />
 
 
 ### Method 2:
+Here a currently arbitrary threshold of 0.2 is used to determine the note played.<br />
 
 General Accuracy: 0.49<br />
 Empty Accuracy: 0.79<br />
