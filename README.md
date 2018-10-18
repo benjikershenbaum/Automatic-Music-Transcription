@@ -15,3 +15,11 @@ Each time unit of the processed recording is represented as a 396 feature long v
 The recording is split into 2 overlapping frames with frame lengths of 2048 and 8192 samples.
 For each of these frame lengths another set of features accounts for the difference of frquencies of a few previous points.
 These each individually have 99 features, so 99*4=396 which accounts for all the features of the a single time unit.
+
+# Output Representation:
+I have considered 3 methods of representing the outputs of the system
+* 1. An 88 feature vector representing the probability of that note being played
+* 2. An 88 feature vector representing the probability of that note being played, and 1 feature indicating if a note is being played.
+3. An 88 feature vector represnting the probablility of that note being played, and a one-hot encoding indication the probability of the number of notes being played.
+
+These different methods will provide different methods of determining the number of notes being played. In methods 1 and 2 a threshold will need to be used for the probabilities to determine the notes played, while in method 3 the NN will learn the number of notes and the most likely number of notes will be determined, then those most likely notes will be selected as the predicton.
