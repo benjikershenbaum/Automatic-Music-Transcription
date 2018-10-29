@@ -65,3 +65,4 @@ Sample outputs for the following sections of music can be found in the Examples 
 
 # Future Plans
 The next step of this project is to improve the transcription by using Bidirectional LSTM Recurrent Neural Network, which will improve transcription accuracy greatly.
+Dimension reduction using clustering and PCA may also be worth investigating
