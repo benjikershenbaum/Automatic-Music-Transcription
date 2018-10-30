@@ -27,7 +27,7 @@ I have considered 3 methods of representing the outputs of the system
 These different methods will provide different methods of determining the number of notes being played. In methods 1 and 2 a threshold will need to be used for the probabilities to determine the notes played, while in method 3 the NN will learn the number of notes and the most likely number of notes will be determined, then those most likely notes will be selected as the predicton.
 
 Once the output of probabilites is created we must determine how many notes are being played, and which notes are being played. 
-For method 1 and method 2 this is done by first applying an arbitrary threshold value of 0.03. In other words, any note with probability 0.03 or lower is set to 0. Then we use K-Means clustering on the remaining 1D data to try and find the notes which are played (i.e. cluster of higher probabilities). 
+For method 1 and method 2 this is done by first applying an arbitrary threshold value of 0.03. In other words, any note with probability 0.03 or lower is set to 0. Then K-Means clustering is used on the remaining 1D data to try and find the notes which are played (i.e. cluster of higher probabilities). 
 
 For method 3 we simply select the highest probablitiy number of notes being played (n), and the find the n highest note probabilities. 
 
