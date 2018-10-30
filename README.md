@@ -1,6 +1,15 @@
 # Automatic Music Transcription:
 # Introduction:
 This task deals with detecting the frequencies and onset times of all musical notes (specifically notes produced by a piano) in .mp3 files. This task will attempt to detect a combination of single notes being played and overlapping notes being played simultaneously.
+
+# Instruction for use:
+The libraries needed are listed in requirements.txt.
+To use this system with your own .wav files you must do the following
+1. Generate the training data. This is done by running "Preprocess-Training". You must replace the "dataset_path_wav" and "dataset_path_txt" variables to point to where you have stored the training data and labels.
+2. Generate the models. This is done by running "Model". You may wish to change the layer configuration.
+3. Process your own recordings. Place those recordings you want transcribed in a folder, and run "Preprocess-Inputs". You must replace "dir_path" with the path to your folder.
+4. Generate midi files. This is done by running "Generate". You must replace "dir_path" with the path to your folder.
+
 # Dataset:
 The dataset used to train and test outcomes will be recordings from the MAPS database. The MAPS database can be found [**here**](
 http://www.tsi.telecom-paristech.fr/aao/en/2010/07/08/maps-database-a-piano-database-for-multipitch-estimation-and-automatic-transcription-of-music/).
