@@ -73,13 +73,6 @@ Sample outputs for the following sections of music can be found in the Examples 
 11. Stardust
 12. Viper's Drag
 
-# How to use:
-* Preprocess-Inputs - Converts inputs in a folder to appropriate input to NN.
-* Model - Create the model.
-* Generate - Generate outputs.
-</br>
-The libraries needed can be found in the requirements.txt file.
-
 # Future Plans
 The next step of this project is to improve the transcription by using Bidirectional LSTM Recurrent Neural Network, which will improve transcription accuracy greatly.
 Dimension reduction using clustering and PCA may also be worth investigating
