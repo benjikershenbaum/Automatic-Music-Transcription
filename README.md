@@ -65,9 +65,10 @@ Sample outputs for the following sections of music can be found in the Examples 
 12. Viper's Drag
 
 # How to use:
-Preprocess-Inputs - Converts inputs in a folder to appropriate input to NN.
-Model - Create the model.
-Generate - Generate outputs.
+* Preprocess-Inputs - Converts inputs in a folder to appropriate input to NN.
+* Model - Create the model.
+* Generate - Generate outputs.
+</br>
 The libraries needed can be found in the requirements.txt file.
 
 # Future Plans
