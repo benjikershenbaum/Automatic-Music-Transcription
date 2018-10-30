@@ -3,7 +3,7 @@
 This task deals with detecting the frequencies and onset times of all musical notes (specifically notes produced by a piano) in .mp3 files. This task will attempt to detect a combination of single notes being played and overlapping notes being played simultaneously.
 
 # Instruction for use:
-The libraries needed are listed in requirements.txt.
+The libraries needed are listed in requirements.txt.</br>
 To use this system with your own .wav files you must do the following
 1. Generate the training data. This is done by running "Preprocess-Training". You must replace the "dataset_path_wav" and "dataset_path_txt" variables to point to where you have stored the training data and labels.
 2. Generate the models. This is done by running "Model". You may wish to change the layer configuration.
