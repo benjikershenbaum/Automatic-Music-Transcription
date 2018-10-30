@@ -44,9 +44,10 @@ For testing, the training done with a 80%/20% training/testing split on the data
 
 # Hidden Layer Units:
 There will be 3 different layouts of the multi-layer neural networks:
-1. Hidden Layers Units = Ouput Units
-2. Hidden Layer Units = Output Units*2
-3. Hidden Layer Units = Input Units*2/3 + Ouput Units
+1. Hidden Layers Units = Ouput Units (Normal)
+2. Hidden Layer Units = Output Units*2 (Double)
+3. Hidden Layer Units = Input Units*2/3 + Ouput Units (Standard)
+These models can be found under the models folder, each with 2-4 layers.
 
 # Example Outputs:
 Sample outputs for the following sections of music can be found in the Examples folder for each of the varients of the data and neural networks:
@@ -62,6 +63,12 @@ Sample outputs for the following sections of music can be found in the Examples 
 10. C Major Scale
 11. Stardust
 12. Viper's Drag
+
+# How to use:
+Preprocess-Inputs - Converts inputs in a folder to appropriate input to NN.
+Model - Create the model.
+Generate - Generate outputs.
+The libraries needed can be found in the requirements.txt file.
 
 # Future Plans
 The next step of this project is to improve the transcription by using Bidirectional LSTM Recurrent Neural Network, which will improve transcription accuracy greatly.
