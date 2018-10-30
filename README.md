@@ -1,6 +1,6 @@
 # Automatic Music Transcription:
 # Introduction:
-This task deals with detecting the frequencies and onset times of all musical notes (specifically notes produced by a piano) in .mp3 files. This task will attempt to detect a combination of single notes being played and overlapping notes being played simultaneously.
+This task deals with detecting the frequencies and onset times of all musical notes (specifically notes produced by a piano) in .wav files. This task will attempt to detect a combination of single notes being played and overlapping notes being played simultaneously.
 
 # Instruction for use:
 The libraries needed are listed in requirements.txt.</br>
