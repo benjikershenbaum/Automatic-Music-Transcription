@@ -28,11 +28,19 @@ Mozart's k265 can be found here: [**Original**](https://raw.githubusercontent.co
 
 # Input Representation:
 The feature extraction of the inputs is done as follows:
-1. Calculate the frequency intensity/time matrix using an stft with a hamming window of length 2048 and window length 8192
+1. Calculate the frequency intensity/time matrix using an stft with a hamming window of length 4096 and window length 8192
 2. Convert both matracies to a note frequency intesity/time matrix. In other words for each time step calculate the weighted avarage of all the frequency bins that lie in the range of two adjacent notes. This is done up to note 100, where note 1 is A0 - frequency 27.5 and note 100 is of frequency 8372. This is done as the 88th note (C8 - frequency 4186) has a second harmonic at the frequency of note 100 (i.e. octave). This in total is already 200 features for each time step.
 3. Calculate the difference between each of the note frequency and its previous time step note frequency. This results in the remaining 200 features
 This yields a n x 400 input matrix where n is the number of time steps determined by the 8192 window spectrogram time bins.
- 
+
+# Preprocessing:
+To reduce noise in the input histogram I performed histogram equalization, this would reduce the spectrogram from this 
+</br>
+![alt text](https://raw.githubusercontent.com/benjikershenbaum/Automatic-Music-Transcription/master/Images/Before.png)
+</br>
+to this 
+</br>
+![alt text](https://raw.githubusercontent.com/benjikershenbaum/Automatic-Music-Transcription/master/Images/After.png)
 
 # Output Representation:
 I have considered 3 methods of representing the outputs of the system
