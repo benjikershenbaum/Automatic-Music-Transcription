@@ -19,8 +19,8 @@ The solution to this task can be very valuable for a few reasons:
 * Academic Use - for people who want to study the features of music.
 * Data Use - for generating new data in a form that can be used for training a machine to generate music.
 
-# Examples:
-An output of my system for Mozart's k265 can be found here: [**Original**](https://raw.githubusercontent.com/benjikershenbaum/Automatic-Music-Transcription/master/Examples/Original/MozartK265.wav) </br> Output with: </br>
+# Example Outputs:
+Mozart's k265 can be found here: [**Original**](https://raw.githubusercontent.com/benjikershenbaum/Automatic-Music-Transcription/master/Examples/Original/MozartK265.wav) </br> My systems output with: </br>
 [**1 Layer**](https://github.com/benjikershenbaum/Automatic-Music-Transcription/blob/master/Examples/1%20Layer/out_MozartK265_n.mid?raw=true) </br>
 [**2 Layers**](https://github.com/benjikershenbaum/Automatic-Music-Transcription/blob/master/Examples/2%20Layer/out_MozartK265_n.mid?raw=true) </br>
 [**3 Layers**](https://github.com/benjikershenbaum/Automatic-Music-Transcription/blob/master/Examples/3%20Layer/out_MozartK265_n.mid?raw=true) </br>
